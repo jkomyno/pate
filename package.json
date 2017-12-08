@@ -1,0 +1,80 @@
+{
+  "name": "pate",
+  "version": "0.1.0",
+  "description": "Modern and light-fast CLI app that scans all the desired files of a certain folder and returns a list with the name of the files which contain a RegEx pattern",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "bin": {
+    "pate": "./bin/pate.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "homepage": "https://github.com/jkomyno/pate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkomyno/pate"
+  },
+  "scripts": {
+    "clear": "rimraf ./dist",
+    "prebuild": "npm run clear",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "prepublish": "npm test && npm run build",
+    "test": "jest",
+    "test:watch": "jest -w",
+    "test:cov": "jest && codecov"
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "utility",
+    "typescript",
+    "stream",
+    "async",
+    "reduce"
+  ],
+  "author": "Alberto Schiabel (https://github.com/jkomyno)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/glob": "^5.0.33",
+    "@types/jest": "^21.1.8",
+    "@types/node": "^8.0.56",
+    "@types/progress": "^2.0.0",
+    "@types/yargs": "^10.0.0",
+    "chalk": "^2.3.0",
+    "codecov": "^3.0.0",
+    "jest": "^21.2.1",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^21.2.4",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2",
+    "yargs": "^10.0.3"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.(ts|js)"
+    ],
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "progress": "^2.0.0"
+  }
+}

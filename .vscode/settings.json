@@ -1,0 +1,9 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "typescript.referencesCodeLens.enabled": true,
+  "tslint.autoFixOnSave": true,
+  "tslint.exclude": "**/node_modules/**/*"
+}
