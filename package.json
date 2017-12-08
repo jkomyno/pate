@@ -24,7 +24,8 @@
     "build": "tsc",
     "build:watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "prepublish": "npm test && npm run build",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
     "test": "jest",
     "test:watch": "jest -w",
     "test:cov": "jest && codecov"
