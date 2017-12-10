@@ -18,6 +18,7 @@ Modern and light-fast CLI app that scans all the desired files of a certain fold
 - [Contributing](#contributing)
   - [Development Scripts](#development-scripts)
   - [Build Note](#build-note)
+- [Other links](#other-links)
 - [Credits](#credits)
 - [License](#license)
 
@@ -153,6 +154,10 @@ As always, contributions are always welcome, and remember:
 
 -   `test:watch` - run tests in watch-mode
 -   `test:cov` - run tests and displays coverage
+
+## Other links
+
+- [Blog post on Medium.com](https://medium.com/@alberto.schiabel/introducing-pate-my-latest-open-source-side-project-12da4fccd9fc)
 
 ## Credits
 
