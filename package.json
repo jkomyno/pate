@@ -1,6 +1,6 @@
 {
   "name": "pate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Modern and light-fast CLI app that scans all the desired files of a certain folder and returns a list with the name of the files which contain a RegEx pattern",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -47,14 +47,12 @@
     "@types/node": "^8.0.56",
     "@types/progress": "^2.0.0",
     "@types/yargs": "^10.0.0",
-    "chalk": "^2.3.0",
     "codecov": "^3.0.0",
     "jest": "^21.2.1",
     "rimraf": "^2.6.2",
     "ts-jest": "^21.2.4",
     "tslint": "^5.8.0",
-    "typescript": "^2.6.2",
-    "yargs": "^10.0.3"
+    "typescript": "^2.6.2"
   },
   "jest": {
     "globals": {
@@ -75,7 +73,9 @@
     "testEnvironment": "node"
   },
   "dependencies": {
+  	"chalk": "^2.3.0",
     "glob": "^7.1.2",
-    "progress": "^2.0.0"
+    "progress": "^2.0.0",
+    "yargs": "^10.0.3"
   }
 }
