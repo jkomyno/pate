@@ -73,8 +73,8 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-  	"chalk": "^2.3.0",
-    "glob": "^7.1.2",
+    "chalk": "^2.3.0",
+    "fast-glob": "^1.0.1",
     "progress": "^2.0.0",
     "yargs": "^10.0.3"
   }

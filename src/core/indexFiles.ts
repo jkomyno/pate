@@ -1,16 +1,13 @@
-import { globPromise } from '../utils';
+import fastGlob from 'fast-glob';
 
 export type indexFilesT = (globPattern: string, path: string, ignorePattern?: string[]) =>
   Promise<string[]>;
 
 const indexFiles: indexFilesT = async (globPattern, path, ignorePattern = []) =>
-  await globPromise(globPattern, {
+  await fastGlob(globPattern, {
     cwd: path,
     ignore: ignorePattern,
-    matchBase: true,
-    realpath: true,
-    silent: true,
-    strict: true,
+    onlyFiles: true,
   });
 
 export default indexFiles;

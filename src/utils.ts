@@ -3,21 +3,10 @@ import {
   createWriteStream,
   open,
 } from 'fs';
-import * as glob from 'glob';
 import { PromiseFactoryT } from './core';
 
 export type fsOpenPromiseT = (path: string, flags: string) => Promise<number>;
 export type fsClosePromiseT = (fd: number) => Promise<void>;
-
-export interface IGlobOptions {
-  cwd?: string;
-  strict?: boolean;
-  realpath?: boolean;
-  matchBase?: boolean;
-  silent?: boolean;
-  ignore?: string[];
-}
-export type globPromiseT = (pattern: string, options: IGlobOptions) => Promise<string[]>;
 
 export const fsClosePromise: fsClosePromiseT = (fd) =>
   new Promise((resolve, reject) => {
@@ -34,17 +23,6 @@ export const fsOpenPromise: fsOpenPromiseT = (path, flags) =>
       err ?
         reject(err) :
         resolve(fd);
-    });
-  });
-
-export const globPromise: globPromiseT = (pattern, options) =>
-  new Promise((resolve, reject) => {
-    glob(pattern, options, (err, matches) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(matches);
-      }
     });
   });
 
