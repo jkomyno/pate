@@ -4,7 +4,7 @@ Modern and light-fast CLI app that scans all the desired files of a certain fold
 
 --------------------------------
 
-[![Travis](https://img.shields.io/travis/jkomyno/pate.svg)](https://travis-ci.org/jkomyno/pate)
+[![Travis](https://img.shields.io/travis/jkomyno/pate.svg?branch=master)](https://travis-ci.org/jkomyno/pate)
 [![npm](https://img.shields.io/npm/v/pate.svg)](https://npmjs.com/package/pate)
 [![npm](https://img.shields.io/npm/dm/pate.svg)](https://npmjs.com/package/pate)
 [![codecov](https://codecov.io/gh/jkomyno/pate/branch/master/graph/badge.svg)](https://codecov.io/gh/jkomyno/pate)  

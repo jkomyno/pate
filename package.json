@@ -42,8 +42,10 @@
   "author": "Alberto Schiabel (https://github.com/jkomyno)",
   "license": "MIT",
   "devDependencies": {
-    "@types/glob": "^5.0.33",
+    "@types/bash-glob": "^2.0.0",
+    "@types/is-glob": "^4.0.0",
     "@types/jest": "^21.1.8",
+    "@types/micromatch": "^2.3.29",
     "@types/node": "^8.0.56",
     "@types/progress": "^2.0.0",
     "@types/yargs": "^10.0.0",
@@ -73,9 +75,12 @@
     "testEnvironment": "node"
   },
   "dependencies": {
+    "bash-glob": "^2.0.0",
     "chalk": "^2.3.0",
-    "fast-glob": "^1.0.1",
+    "is-glob": "^4.0.0",
+    "micromatch": "^3.1.4",
     "progress": "^2.0.0",
+    "readdir-enhanced": "^2.1.0",
     "yargs": "^10.0.3"
   }
 }
